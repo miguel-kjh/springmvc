@@ -4,9 +4,10 @@
 
     <title>Spring Core Online Tutorial</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/4.5.2/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/4.5.2/css/bootstrap.min.css}"
-          rel="stylesheet" media="screen" />
+          rel="stylesheet" media="screen"/>
 
     <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
             th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
@@ -15,8 +16,17 @@
           th:href="@{css/spring-core.css}" rel="stylesheet" media="screen"/>
 </head>
 <body>
-<h1>Hello World</h1>
+<div class="container">
+    <h1>Hello World</h1>
 
-<h2>This is my Thymeleaf index page. This is my changed.</h2>
+    <h2>This is my Thymeleaf index page.</h2>
+
+    <ul>
+        <li><a href="product/list">Products</a></li>
+        <li><a href="customer/list">Customers</a></li>
+    </ul>
+
+</div>
+
 </body>
 </html>
