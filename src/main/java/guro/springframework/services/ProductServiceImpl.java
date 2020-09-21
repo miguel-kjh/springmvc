@@ -2,12 +2,14 @@ package guro.springframework.services;
 
 import guro.springframework.domain.DomainObject;
 import guro.springframework.domain.Product;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.*;
 
 @Service
+@Profile("map")
 public class ProductServiceImpl extends AbstractMapService implements ProductService{
     @Override
     public List<DomainObject> listAll() {

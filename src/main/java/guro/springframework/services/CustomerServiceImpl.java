@@ -2,11 +2,13 @@ package guro.springframework.services;
 
 import guro.springframework.domain.Customer;
 import guro.springframework.domain.DomainObject;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
 @Service
+@Profile("map")
 public class CustomerServiceImpl extends AbstractMapService implements CustomerService {
     @Override
     public List<DomainObject> listAll() {
